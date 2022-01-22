@@ -1,7 +1,8 @@
 * {
     overflow: hidden;
     box-sizing: border-box;
-  }
+    margin: 0;
+    padding: 0;  }
 
 html, body {
     width: 100%;
@@ -128,11 +129,11 @@ img {
 /*------------------------------------APP------------------------------------*/
 
 .on{
-    --z-index: 5;
+    z-index: 8;
 }
 
 .off{
-    --z-index: -1;
+    z-index: -5;
 }
 
 .wrapper{
@@ -142,7 +143,6 @@ img {
     max-width: 450px;
     width: 100%;
     background: #ffffff57;
-    z-index: 5;
     border-radius: 10px;
     transform: translate(-50%, -50%);
     box-shadow: 10px 10px 15px rgba(0,0,0,0.06);
@@ -203,6 +203,7 @@ textarea {
 
 button{
     background: #ffffff75;
+    margin-top: 15px;
     padding: 8px;
     border: 0;
     -webkit-border-radius: 10px;
@@ -233,7 +234,7 @@ button:hover {
    
   /* "Petit scroller maintenue" */
   ::-webkit-scrollbar-thumb:hover {
-    background: #d8d8d87a;
+    background: #ffffffd3;
   }
 
 /*------------------------------------RIGHT CLICK------------------------------------*/
