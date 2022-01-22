@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="css/desktop.css"/>
+    <link rel="stylesheet" href="css/music-player.css"/>
+    <title>KatOS - Desktop</title>
+    <link rel="icon" href="img/logo.png" sizes="32x32">
+    <script src="date.js"></script>
+    <script src="theme.js"></script>
+    <script src="right-click.js"></script>
+      <script src="https://kit.fontawesome.com/a136dca9fc.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+
+      
+      <div id="contextMenu" class="context-menu" 
+    style="display: none">
+    <ul>
+        <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+        <li><a href="javascript:location.reload(true)"><i class="fas fa-redo-alt"></i> Reload</a></li>
+        <li><a href="#"><i class="fas fa-paw"></i> Version</a></li>
+    </ul>
+</div>
+      
+
+      <div class="background bg-light"></div>
+        <div class="taskbar">
+            <div class="software">
+              <i class="fas fa-paw"></i>
+                <i class="fas fa-cog"></i>
+                <i class="fas fa-sticky-note"></i>
+                <i class="fas fa-music"></i>
+                <i class="fas fa-battery-full"></i>
+            </div>
+        </div>
+        <div class="box">
+            <div class="clock">Loading...</div>
+            <div class="date">Please wait</div>
+        </div>
+      <div class="wrapper kat">
+            <header><i class="fas fa-paw"></i> KatOS</header>
+            <div class="content">
+              <div class="title"><b>KatOS</b></div>
+              <p>Version 1.0.1 Beta (22KAT6824j)</p>
+              <div style="display: flex;">
+                <a href="https://github.com/ImGalaad/KatOS/issues" target="blank" style="margin: 0 5px;"><button>Systeme Report</button></a>
+                <a href="https://github.com/ImGalaad/KatOS" target="blank" style="margin: 0 5px;"><button>KatOS Informations</button></a>
+              </div>
+            </div>
+            </div>
+          <!--<div class="wrapper settings">
+            <header><i class="fas fa-cog"></i> Settings</header>
+            <div class="content">
+              <div class="title">Title exemple</div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget libero nisi. In ullamcorper ullamcorper quam, at pellentesque arcu pharetra nec. Nam lacinia tempus magna quis venenatis. Morbi justo turpis, dictum sit amet ultrices eu, suscipit sit amet tellus. Quisque imperdiet a neque a lobortis. Ut ultricies vel arcu vel fermentum. Donec vitae tortor ut elit fringilla cursus. Maecenas vehicula finibus dapibus. Maecenas vitae imperdiet ligula, porta venenatis orci. Mauris vel lorem porttitor felis dictum dictum.</p>
+            </div>
+        </div>
+    <div class="wrapper notepad">
+            <header><i class="fas fa-sticky-note"> Notepad</header>
+            <div class="content">
+                <textarea id="textarea" rows="20px" cols="58%" placeholder="Write here" wrap="hard"></textarea>
+            </div>
+        </div>
+        <div class="wrapper music">
+            <header><i class="fas fa-music"></i> Music Player</header>
+            <div class="content">
+                <div class="player">
+  
+                    
+                    <div class="details">
+                      <div class="now-playing">x of y</div>
+                      <div class="track-art"></div>
+                      <div class="track-name">Track Name</div>
+                      <div class="track-artist">Track Artist</div>
+                    </div>
+                  
+                   
+                    <div class="buttons">
+                      <div class="prev-track" onclick="prevTrack()">
+                        <i class="fa fa-step-backward fa-2x"></i>
+                      </div>
+                      <div class="playpause-track" onclick="playpauseTrack()">
+                        <i class="fas fa-play fa-2x"></i>
+                      </div>
+                      <div class="next-track" onclick="nextTrack()">
+                        <i class="fa fa-step-forward fa-2x"></i>
+                      </div>
+                    </div>
+                  
+                   
+                    <div class="slider_container">
+                      <div class="current-time">00:00</div>
+                      <input type="range" min="1" max="100"
+                        value="0" class="seek_slider" onchange="seekTo()">
+                      <div class="total-duration">00:00</div>
+                    </div>
+                  
+                   
+                    <div class="slider_container">
+                      <i class="fa fa-volume-down"></i>
+                      <input type="range" min="1" max="100"
+                        value="99" class="volume_slider" onchange="setVolume()">
+                      <i class="fa fa-volume-up"></i>
+                    </div>
+                  </div>
+            </div>
+        </div>-->
+        <script src="app.js"></script>
+        <script src="music-player.js"></script>
+    </body>
+</html>
