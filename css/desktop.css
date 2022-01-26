@@ -1,23 +1,20 @@
 * {
+    margin: 0;
+    padding: 0; 
     overflow: hidden;
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;  }
+}
 
 html, body {
-    width: 100%;
-    height: 100%;
     margin: 0;
     padding: 0;
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue';
+    width: 100%;
+    height: 100%;
     background-color: #111111;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue';
 }
 
 /*------------------------------------BACKGROUND------------------------------------*/
-
-img {
-    width: 100%;
-}
 
 .background {
     z-index: 0;
@@ -60,8 +57,8 @@ img {
   }
 
 .taskbar * {
-    margin: 3px 15px;
     z-index: 1;
+    margin: 3px 15px;
 }
 
 .fa-paw:hover {
@@ -69,9 +66,9 @@ img {
 }
 
 .fa-cog:hover {
-    transform: rotate(360deg);
-    transition-duration: 1s;
     color: white;
+    transition-duration: 1s;
+    transform: rotate(360deg);
 }
 
 .fa-sticky-note:hover {
@@ -81,9 +78,9 @@ img {
 }
 
 .fa-music:hover {
+    color: white;
     transform: rotate(5deg);
     transition-duration: .2s;
-    color: white;
 }
 
 .fa-battery-full:hover {
@@ -93,14 +90,14 @@ img {
 /*------------------------------------CLOCK & DATE------------------------------------*/
 
 .box {
-    z-index: 1;
     top: 0;
     left: 50%;
+    z-index: 1;
+    margin: 5px;
+    color: #ffffff;
     text-align: center;
     position: absolute;
-    margin: 5px;
     padding: 0 5px 5px 5px;
-    color: #ffffff;
     transform: translate(-50%);
 }
 
@@ -113,12 +110,12 @@ img {
 }
 
 .box:hover {
-    background-color: #ffffff62;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-    backdrop-filter: blur(4px);
     cursor: pointer;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    backdrop-filter: blur(4px);
+    -webkit-border-radius: 10px;
+    background-color: #ffffff62;
 }
 
 .fas:hover,.fab:hover {
@@ -129,7 +126,7 @@ img {
 /*------------------------------------APP------------------------------------*/
 
 .on{
-    z-index: 8;
+    z-index: 5;
 }
 
 .off{
@@ -137,26 +134,26 @@ img {
 }
 
 .wrapper{
-    position: absolute;
     top: 50%;
     left: 50%;
-    max-width: 450px;
     width: 100%;
-    background: #ffffff57;
+    max-width: 450px;
+    position: absolute;
     border-radius: 10px;
+    background: #ffffff57;
+    backdrop-filter: blur(10px);
     transform: translate(-50%, -50%);
     box-shadow: 10px 10px 15px rgba(0,0,0,0.06);
-    backdrop-filter: blur(10px);
 }
 
 textarea {
     border: 0;
+    cursor: auto;
     resize: none;
-    background: #00000000;
+    padding: 10px;
     outline: none;
     overflow: auto;
-    cursor: auto;
-    padding: 10px;
+    background: #00000000;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -173,17 +170,12 @@ textarea {
     color: black;
   }
 
-  .wrapper header.active{
-    cursor: move;
-    user-select: none;
-  }
-
   .wrapper .content{
     display: flex;
-    padding: 30px 30px 40px 30px;
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    padding: 30px 30px 40px 30px;
   }
 
   .content .title{
@@ -197,18 +189,14 @@ textarea {
     text-align: center;
 }
 
-.wrapper .settings {
-    z-index: var(--z-index); 
-}
-
 button{
-    background: #ffffff75;
-    margin-top: 15px;
-    padding: 8px;
     border: 0;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
+    padding: 8px;
+    margin-top: 15px;
     border-radius: 10px;
+    background: #ffffff75;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
 }
 
 button:hover {
@@ -240,32 +228,32 @@ button:hover {
 /*------------------------------------RIGHT CLICK------------------------------------*/
 
 .context-menu {
+    z-index: 8;
     position: absolute;
     text-align: center;
-    background: #ffffff57;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
     border-radius: 10px;
+    background: #ffffff57;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
     backdrop-filter: blur(10px);
-    z-index: 8;
 }
 
 .context-menu ul {
-    padding: 0px;
     margin: 0px;
+    padding: 0px;
     min-width: 150px;
     list-style: none;
 }
 
 .context-menu ul li {
-    padding-bottom: 7px;
-    padding-top: 7px;
     border: 0;
+    padding-top: 7px;
+    padding-bottom: 7px;
 }
 
 .context-menu ul li a {
-    text-decoration: none;
     color: black;
+    text-decoration: none;
 }
 
 .context-menu ul li:hover  {
